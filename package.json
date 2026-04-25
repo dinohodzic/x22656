@@ -7,7 +7,7 @@
     "start": "node dist/server.cjs",
     "cpanel-start": "node server.js",
     "dev": "tsx server.ts",
-    "build:server": "esbuild server.ts --platform=node --bundle --format=cjs --outfile=dist/server.cjs",
+    "build:server": "esbuild server.ts --platform=node --bundle --format=cjs --packages=external --outfile=dist/server.cjs",
     "build:client": "vite build",
     "build": "npm run build:client && npm run build:server",
     "preview": "vite preview",
