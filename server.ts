@@ -245,6 +245,9 @@ async function startServer() {
           auth: {
             user: config.smtpUser,
             pass: config.smtpPass, // in real app, better security needed, but okay for MVP admin
+          },
+          tls: {
+            rejectUnauthorized: false
           }
         });
         
